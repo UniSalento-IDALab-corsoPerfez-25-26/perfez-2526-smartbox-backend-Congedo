@@ -1,0 +1,12 @@
+# /etc/mosquitto/acl – ogni dispositivo scrive solo sui propri topic; il backend legge tutto.
+# Utenti creati con:  sudo mosquitto_passwd /etc/mosquitto/passwd <utente>
+
+user smartbox-veicolo-01
+topic write smartbox/veicolo-01/#
+
+user smartbox-backend
+topic read smartbox/#
+
+# telefono (solo lettura, ad es. app MQTT o gateway)
+user telefono-veicolo-01
+topic read smartbox/veicolo-01/#

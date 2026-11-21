@@ -1,0 +1,7 @@
+# Token dei veicoli: si copia da devices.example.yaml e resta locale
+devices.yaml
+# Archivio degli eventi
+*.sqlite
+.venv/
+__pycache__/
+*.pyc

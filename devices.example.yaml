@@ -1,0 +1,6 @@
+# Copiare in devices.yaml (escluso dal controllo di versione).
+# Un token per dispositivo: identificativo veicolo -> token Bearer usato dalla smartbox (secrets.yaml, http.token).
+# Generare token robusti, es.:  python -c "import secrets; print(secrets.token_urlsafe(32))"
+veicolo-01: token-dispositivo-veicolo-01
+veicolo-02: token-dispositivo-veicolo-02
+furgone-07: token-dispositivo-furgone-07
